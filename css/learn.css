@@ -1,0 +1,615 @@
+/* Learn Page Styles */
+
+/* Active nav link */
+.nav-links a.active {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Learn Hero */
+.learn-hero {
+    padding: 10rem 2rem 4rem;
+    background: linear-gradient(135deg, #0F172A 0%, #1E3A5F 100%);
+    text-align: center;
+    color: white;
+}
+
+.learn-hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.learn-badge {
+    display: inline-block;
+    background: rgba(59, 130, 246, 0.2);
+    color: var(--primary);
+    padding: 0.5rem 1.25rem;
+    border-radius: 30px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.learn-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.learn-hero p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Table of Contents */
+.toc {
+    padding: 4rem 2rem;
+    background: var(--background);
+}
+
+.toc-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.toc h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+}
+
+.toc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.toc-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    background: var(--background-alt);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: all 0.2s;
+}
+
+.toc-item:hover {
+    border-color: var(--primary);
+    background: white;
+    transform: translateY(-2px);
+}
+
+.toc-number {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--primary);
+    min-width: 28px;
+}
+
+.toc-text {
+    font-weight: 500;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+/* Learn Sections */
+.learn-section {
+    padding: 5rem 2rem;
+    background: var(--background);
+}
+
+.learn-section.alt-bg {
+    background: var(--background-alt);
+}
+
+.section-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section-number {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+    background: rgba(59, 130, 246, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.section-intro {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+}
+
+/* Content Cards */
+.content-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    border: 1px solid var(--border);
+}
+
+.intro-text {
+    font-size: 1.15rem;
+    color: var(--text);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.intro-text strong {
+    color: var(--primary);
+}
+
+/* Key Points */
+.key-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.key-point {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.key-point-number {
+    width: 32px;
+    height: 32px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+
+.key-point h4 {
+    font-size: 1rem;
+    color: var(--secondary);
+    margin-bottom: 0.25rem;
+}
+
+.key-point p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* FIRE Types Grid */
+.fire-types-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.fire-type-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.fire-type-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.fire-type-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Removed fire-type-icon - using text only */
+
+.fire-type-header h3 {
+    font-size: 1.35rem;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.fire-type-desc {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.fire-type-points {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.fire-type-points li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+.fire-type-points li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.fire-type-target {
+    background: var(--background-alt);
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fire-type-target .label {
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+.fire-type-target .amount {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Card color accents */
+.fire-type-card.lean {
+    border-top: 4px solid #10B981;
+}
+
+.fire-type-card.barista {
+    border-top: 4px solid #F59E0B;
+}
+
+.fire-type-card.coast {
+    border-top: 4px solid #3B82F6;
+}
+
+.fire-type-card.fat {
+    border-top: 4px solid #8B5CF6;
+}
+
+/* Investment Grid */
+.investment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.investment-card {
+    background: var(--background-alt);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    transition: transform 0.2s;
+}
+
+.investment-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Investment cards - no icons, clean look */
+
+.investment-card h3 {
+    font-size: 1.25rem;
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+}
+
+.investment-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.investment-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.stat-label {
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+.stat-value {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* 4% Rule Explainer */
+.rule-explainer {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.rule-intro {
+    font-size: 1.15rem;
+    color: var(--text);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.formula-box {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid var(--primary);
+}
+
+.formula {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.formula-label {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.formula-equals {
+    font-size: 1.5rem;
+    color: var(--text-light);
+}
+
+.formula-calc {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.rule-explanation {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border);
+}
+
+.rule-explanation h4 {
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.rule-explanation p {
+    color: var(--text-light);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.example-box {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+}
+
+.example-box h4 {
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
+}
+
+.example-calc {
+    margin-bottom: 1rem;
+}
+
+.calc-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+}
+
+.calc-row:last-child {
+    border-bottom: none;
+}
+
+.calc-row.highlight {
+    background: var(--background-alt);
+    margin: 0 -1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border-bottom: none;
+}
+
+.calc-row.highlight span:last-child {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.example-note {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+/* Tips Grid */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.tip-card {
+    background: var(--background-alt);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    position: relative;
+}
+
+.tip-number {
+    width: 36px;
+    height: 36px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.tip-card h3 {
+    font-size: 1.1rem;
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+}
+
+.tip-card p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Mistakes Grid */
+.mistakes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.mistake-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-left: 4px solid #EF4444;
+}
+
+/* Mistake cards - clean design without icons */
+
+.mistake-card h3 {
+    font-size: 1.1rem;
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+}
+
+.mistake-card p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .learn-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .toc-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .key-points {
+        grid-template-columns: 1fr;
+    }
+
+    .fire-types-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .investment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mistakes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .learn-hero {
+        padding: 8rem 1.5rem 3rem;
+    }
+
+    .learn-hero h1 {
+        font-size: 2rem;
+    }
+
+    .learn-hero p {
+        font-size: 1rem;
+    }
+
+    .toc-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .learn-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-card {
+        padding: 1.5rem;
+    }
+
+    .formula {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .formula-label,
+    .formula-equals,
+    .formula-calc {
+        font-size: 1.25rem;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mistakes-grid {
+        grid-template-columns: 1fr;
+    }
+}
