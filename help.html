@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Retire Early Help Center - Find answers to frequently asked questions about the app.">
+    <title>Help & FAQ - Retire Early</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .help-page {
+            padding: 8rem 2rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+        .help-page h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+        .help-page .subtitle {
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+        .faq-section {
+            margin-bottom: 2.5rem;
+        }
+        .faq-section h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+        }
+        .faq-item {
+            background: var(--background-alt);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+        .faq-question:hover {
+            background: rgba(59, 130, 246, 0.05);
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary);
+            font-weight: 400;
+        }
+        .faq-item.open .faq-question::after {
+            content: '-';
+        }
+        .faq-answer {
+            display: none;
+            padding: 0 1.5rem 1.25rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+        .faq-answer p {
+            margin-bottom: 0.75rem;
+        }
+        .faq-answer ul {
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .faq-answer li {
+            margin-bottom: 0.5rem;
+        }
+        .help-cta {
+            background: var(--background-alt);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .help-cta h3 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        .help-cta p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+        .help-cta a {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .help-cta a:hover {
+            background: var(--primary-dark);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Retire Early</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="learn.html">Learn</a>
+                <a href="index.html#download" class="nav-cta">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="help-page">
+        <h1>Help & FAQ</h1>
+        <p class="subtitle">Find answers to common questions about Retire Early</p>
+
+        <!-- Getting Started -->
+        <div class="faq-section">
+            <h2>Getting Started</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">What is Retire Early?</div>
+                <div class="faq-answer">
+                    <p>Retire Early is a financial planning app designed to help you achieve Financial Independence and Retire Early (FIRE). It helps you calculate your FIRE number, track your progress, and plan for major life events.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I get started?</div>
+                <div class="faq-answer">
+                    <p>Getting started is simple:</p>
+                    <ul>
+                        <li>Download the app from the App Store or Google Play</li>
+                        <li>Create an account or continue as a guest</li>
+                        <li>Enter your basic financial information (income, expenses, savings)</li>
+                        <li>See your personalized FIRE number and timeline</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is my financial data secure?</div>
+                <div class="faq-answer">
+                    <p>Yes, your data security is our top priority. All financial data is stored locally on your device by default. If you enable cloud sync, your data is encrypted end-to-end. We never sell or share your personal financial information.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FIRE Calculations -->
+        <div class="faq-section">
+            <h2>FIRE Calculations</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">How is my FIRE number calculated?</div>
+                <div class="faq-answer">
+                    <p>Your FIRE number is calculated using the 4% rule: Annual Expenses x 25. This gives you the portfolio size needed to safely withdraw 4% per year to cover your expenses indefinitely.</p>
+                    <p>For example, if your annual expenses are £36,000, your FIRE number would be £900,000.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What is the 4% rule?</div>
+                <div class="faq-answer">
+                    <p>The 4% rule comes from the Trinity Study, which found that withdrawing 4% of your portfolio annually gives you a 95% chance of your money lasting 30+ years. It's a widely used guideline in the FIRE community for retirement planning.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What return rate does the app assume?</div>
+                <div class="faq-answer">
+                    <p>By default, the app uses a 7% annual return rate, which is the historical average for a diversified stock portfolio after inflation. You can customize this rate in the calculator settings to match your investment strategy.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What are the different FIRE types?</div>
+                <div class="faq-answer">
+                    <p>There are four main FIRE types:</p>
+                    <ul>
+                        <li><strong>Lean FIRE:</strong> Retire with minimal expenses (£25k-£40k/year)</li>
+                        <li><strong>Barista FIRE:</strong> Semi-retirement with part-time work</li>
+                        <li><strong>Coast FIRE:</strong> Saved enough that compound growth covers retirement</li>
+                        <li><strong>Fat FIRE:</strong> Retire with a luxurious lifestyle (£100k+/year)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="faq-section">
+            <h2>Features</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">What is Scenario Planning?</div>
+                <div class="faq-answer">
+                    <p>Scenario Planning lets you test "what-if" situations to see how they affect your FIRE timeline. You can add events like buying a house, having children, changing careers, or taking a sabbatical to see the impact on your financial independence date.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I track multiple scenarios?</div>
+                <div class="faq-answer">
+                    <p>Yes, you can create and save multiple scenarios to compare different life paths. This helps you make informed decisions about major financial choices.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How does the Compounding Breakdown work?</div>
+                <div class="faq-answer">
+                    <p>The Compounding Breakdown shows you year-by-year projections of your portfolio growth. You can see how your initial investment, monthly contributions, and compound returns combine to reach your FIRE goal.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Account & Subscription -->
+        <div class="faq-section">
+            <h2>Account & Subscription</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">Is the app free to use?</div>
+                <div class="faq-answer">
+                    <p>Yes, the core features of Retire Early are free. This includes the FIRE calculator, basic scenario planning, and the Learn section. Premium features like advanced analytics and unlimited scenarios are available with a subscription.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I cancel my subscription?</div>
+                <div class="faq-answer">
+                    <p>You can cancel your subscription at any time through your device's app store:</p>
+                    <ul>
+                        <li><strong>iOS:</strong> Settings > Your Name > Subscriptions > Retire Early > Cancel</li>
+                        <li><strong>Android:</strong> Play Store > Menu > Subscriptions > Retire Early > Cancel</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I delete my account?</div>
+                <div class="faq-answer">
+                    <p>You can delete your account from within the app: Profile > Account Settings > Delete Account. This will permanently remove all your data from our servers. Note that data stored locally on your device will need to be deleted by uninstalling the app.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Troubleshooting -->
+        <div class="faq-section">
+            <h2>Troubleshooting</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">The app isn't syncing my data</div>
+                <div class="faq-answer">
+                    <p>If your data isn't syncing, try these steps:</p>
+                    <ul>
+                        <li>Check your internet connection</li>
+                        <li>Make sure you're signed in to your account</li>
+                        <li>Pull down to refresh on the main screen</li>
+                        <li>Sign out and sign back in</li>
+                        <li>If the issue persists, contact support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">I forgot my password</div>
+                <div class="faq-answer">
+                    <p>On the sign-in screen, tap "Forgot Password" and enter your email address. We'll send you a link to reset your password. Check your spam folder if you don't see the email within a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="help-cta">
+            <h3>Still need help?</h3>
+            <p>Can't find what you're looking for? Our support team is here to help.</p>
+            <a href="contact.html">Contact Support</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2024 Retire Early. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>
