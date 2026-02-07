@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/learn.css">
 </head>
-<body>
+<body class="learn-page">
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
@@ -32,383 +32,544 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="learn-hero">
-        <div class="learn-hero-content">
-            <span class="learn-badge">LEARN</span>
-            <h1>The Complete Guide to <span class="highlight">FIRE</span></h1>
-            <p>Master your path to Financial Independence, Retire Early</p>
-        </div>
-    </section>
-
-    <!-- Table of Contents -->
-    <section class="toc">
-        <div class="toc-container">
-            <h2>What You'll Learn</h2>
-            <div class="toc-grid">
-                <a href="#what-is-fire" class="toc-item">
-                    <span class="toc-number">01</span>
-                    <span class="toc-text">What is FIRE?</span>
-                </a>
-                <a href="#fire-types" class="toc-item">
-                    <span class="toc-number">02</span>
-                    <span class="toc-text">FIRE Types Explained</span>
-                </a>
-                <a href="#investments" class="toc-item">
-                    <span class="toc-number">03</span>
-                    <span class="toc-text">Investment Vehicles</span>
-                </a>
-                <a href="#calculator" class="toc-item">
-                    <span class="toc-number">04</span>
-                    <span class="toc-text">The 4% Rule</span>
-                </a>
-                <a href="#tips" class="toc-item">
-                    <span class="toc-number">05</span>
-                    <span class="toc-text">Pro Tips</span>
-                </a>
-                <a href="#mistakes" class="toc-item">
-                    <span class="toc-number">06</span>
-                    <span class="toc-text">Mistakes to Avoid</span>
-                </a>
+    <!-- Main Layout with Sidebar -->
+    <div class="learn-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="learn-sidebar">
+            <div class="sidebar-header">
+                <span class="sidebar-title">Topics</span>
+                <button class="sidebar-close" aria-label="Close sidebar">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                </button>
             </div>
-        </div>
-    </section>
+            <div class="sidebar-content">
+                <div class="sidebar-section">
+                    <h3 class="sidebar-heading">Getting Started</h3>
+                    <ul class="sidebar-nav">
+                        <li><a href="#what-is-fire" class="sidebar-link active">What is FIRE?</a></li>
+                        <li><a href="#fire-number" class="sidebar-link">Your FIRE Number</a></li>
+                        <li><a href="#four-percent-rule" class="sidebar-link">The 4% Rule</a></li>
+                    </ul>
+                </div>
 
-    <!-- What is FIRE Section -->
-    <section class="learn-section" id="what-is-fire">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-number">01</span>
-                <h2>What is FIRE?</h2>
+                <div class="sidebar-section">
+                    <h3 class="sidebar-heading">FIRE Types</h3>
+                    <ul class="sidebar-nav">
+                        <li><a href="#lean-fire" class="sidebar-link">Lean FIRE</a></li>
+                        <li><a href="#barista-fire" class="sidebar-link">Barista FIRE</a></li>
+                        <li><a href="#coast-fire" class="sidebar-link">Coast FIRE</a></li>
+                        <li><a href="#fat-fire" class="sidebar-link">Fat FIRE</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-heading">Investment Basics</h3>
+                    <ul class="sidebar-nav">
+                        <li><a href="#index-funds" class="sidebar-link">Index Funds</a></li>
+                        <li><a href="#isas-pensions" class="sidebar-link">ISAs & Pensions</a></li>
+                        <li><a href="#real-estate" class="sidebar-link">Real Estate</a></li>
+                        <li><a href="#bonds" class="sidebar-link">Bonds</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-heading">Strategies</h3>
+                    <ul class="sidebar-nav">
+                        <li><a href="#saving-tips" class="sidebar-link">Saving Tips</a></li>
+                        <li><a href="#mistakes" class="sidebar-link">Common Mistakes</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="content-card intro-card">
-                <p class="intro-text">
-                    <strong>FIRE</strong> stands for <strong>Financial Independence, Retire Early</strong>. It's a movement focused on extreme savings and investment that allows people to retire far earlier than traditional budgets and retirement plans would allow.
-                </p>
-                <div class="key-points">
-                    <div class="key-point">
-                        <div class="key-point-number">1</div>
-                        <div>
-                            <h4>Save Aggressively</h4>
+        </aside>
+
+        <!-- Mobile Sidebar Overlay -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- Mobile Sidebar Toggle -->
+        <button class="sidebar-toggle" aria-label="Toggle sidebar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+
+        <!-- Main Content -->
+        <main class="learn-main">
+            <div class="learn-content">
+
+                <!-- What is FIRE -->
+                <article class="content-section" id="what-is-fire">
+                    <div class="breadcrumb">
+                        <span>Learn</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                        <span>Getting Started</span>
+                    </div>
+                    <h1>What is FIRE?</h1>
+                    <p class="lead">FIRE stands for <strong>Financial Independence, Retire Early</strong>. It's a lifestyle movement focused on extreme savings and smart investing to achieve financial freedom decades earlier than traditional retirement.</p>
+
+                    <div class="info-box">
+                        <div class="info-box-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                        </div>
+                        <div class="info-box-content">
+                            <strong>Key Insight</strong>
+                            <p>FIRE isn't about never working again. It's about having the freedom to choose how you spend your time, without financial constraints.</p>
+                        </div>
+                    </div>
+
+                    <h2>The Core Principles</h2>
+                    <div class="principles-grid">
+                        <div class="principle-card">
+                            <div class="principle-number">1</div>
+                            <h3>Save Aggressively</h3>
                             <p>FIRE followers typically save 50-70% of their income, far above the traditional 10-15%.</p>
                         </div>
-                    </div>
-                    <div class="key-point">
-                        <div class="key-point-number">2</div>
-                        <div>
-                            <h4>Invest Wisely</h4>
+                        <div class="principle-card">
+                            <div class="principle-number">2</div>
+                            <h3>Invest Wisely</h3>
                             <p>Money is invested in low-cost index funds, real estate, and other assets that grow over time.</p>
                         </div>
-                    </div>
-                    <div class="key-point">
-                        <div class="key-point-number">3</div>
-                        <div>
-                            <h4>Reach Your Number</h4>
-                            <p>Your "FIRE number" is typically 25x your annual expenses, based on the 4% safe withdrawal rule.</p>
+                        <div class="principle-card">
+                            <div class="principle-number">3</div>
+                            <h3>Reach Your Number</h3>
+                            <p>Your "FIRE number" is typically 25x your annual expenses, based on the 4% rule.</p>
+                        </div>
+                        <div class="principle-card">
+                            <div class="principle-number">4</div>
+                            <h3>Live on Your Terms</h3>
+                            <p>Once you reach your number, work becomes optional. Pursue passions, travel, or keep working.</p>
                         </div>
                     </div>
-                    <div class="key-point">
-                        <div class="key-point-number">4</div>
-                        <div>
-                            <h4>Live on Your Terms</h4>
-                            <p>Once you reach your number, work becomes optional. Pursue passions, travel, or keep working—it's your choice.</p>
+                </article>
+
+                <!-- Your FIRE Number -->
+                <article class="content-section" id="fire-number">
+                    <h1>Your FIRE Number</h1>
+                    <p class="lead">Your FIRE number is the amount of money you need invested to sustain your lifestyle indefinitely without working.</p>
+
+                    <div class="formula-card">
+                        <div class="formula-title">The Formula</div>
+                        <div class="formula-content">
+                            <span class="formula-result">FIRE Number</span>
+                            <span class="formula-equals">=</span>
+                            <span class="formula-input">Annual Expenses × 25</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- FIRE Types Section -->
-    <section class="learn-section alt-bg" id="fire-types">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-number">02</span>
-                <h2>FIRE Types Explained</h2>
-            </div>
-            <p class="section-intro">Not all FIRE journeys look the same. Choose the path that fits your lifestyle and goals.</p>
-
-            <div class="fire-types-grid">
-                <!-- Lean FIRE -->
-                <div class="fire-type-card lean">
-                    <div class="fire-type-header">
-                        <h3>Lean FIRE</h3>
+                    <h2>Example Calculation</h2>
+                    <div class="calculation-table">
+                        <div class="calc-row">
+                            <span>Monthly Expenses</span>
+                            <span>£3,000</span>
+                        </div>
+                        <div class="calc-row">
+                            <span>Annual Expenses (×12)</span>
+                            <span>£36,000</span>
+                        </div>
+                        <div class="calc-row highlight">
+                            <span>FIRE Number (×25)</span>
+                            <span class="highlight-value">£900,000</span>
+                        </div>
                     </div>
-                    <p class="fire-type-desc">Achieve financial independence with minimal expenses. Target: 25x your lean annual expenses (£25k-£40k/year).</p>
-                    <ul class="fire-type-points">
-                        <li>Live on £25,000-£40,000 per year</li>
-                        <li>Requires frugal lifestyle mindset</li>
-                        <li>Fastest path to FIRE (often 10-15 years)</li>
-                        <li>Best for minimalists and low cost areas</li>
+                    <p class="calc-note">With £900,000 invested, you can safely withdraw £36,000/year (4%) to cover your expenses indefinitely.</p>
+                </article>
+
+                <!-- The 4% Rule -->
+                <article class="content-section" id="four-percent-rule">
+                    <h1>The 4% Rule</h1>
+                    <p class="lead">The 4% rule is the foundation of FIRE planning. It determines how much you can safely withdraw from your portfolio each year.</p>
+
+                    <h2>How It Works</h2>
+                    <p>The Trinity Study found that withdrawing 4% of your portfolio annually gives you a <strong>95% chance</strong> of your money lasting 30+ years. Since 4% × 25 = 100%, you need 25 times your annual expenses.</p>
+
+                    <div class="info-box success">
+                        <div class="info-box-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <div class="info-box-content">
+                            <strong>Historical Success</strong>
+                            <p>Based on historical data, a 4% withdrawal rate has survived major market crashes, including the Great Depression and 2008 financial crisis.</p>
+                        </div>
+                    </div>
+
+                    <h2>Important Considerations</h2>
+                    <ul class="content-list">
+                        <li>The 4% rule assumes a 30-year retirement. For earlier retirement, consider 3.5% or 3%.</li>
+                        <li>Your portfolio should be diversified across stocks and bonds.</li>
+                        <li>Adjust withdrawals based on market conditions (flexible spending).</li>
+                        <li>Consider other income sources like part-time work or rental income.</li>
                     </ul>
-                    <div class="fire-type-target">
-                        <span class="label">Target Portfolio</span>
-                        <span class="amount">£625K - £1M</span>
+                </article>
+
+                <!-- Lean FIRE -->
+                <article class="content-section" id="lean-fire">
+                    <div class="breadcrumb">
+                        <span>Learn</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                        <span>FIRE Types</span>
                     </div>
-                </div>
+                    <h1>Lean FIRE</h1>
+                    <p class="lead">Achieve financial independence with minimal expenses. Live a frugal but fulfilling life.</p>
+
+                    <div class="type-stats">
+                        <div class="type-stat">
+                            <span class="stat-label">Annual Spending</span>
+                            <span class="stat-value">£25,000 - £40,000</span>
+                        </div>
+                        <div class="type-stat">
+                            <span class="stat-label">Target Portfolio</span>
+                            <span class="stat-value">£625K - £1M</span>
+                        </div>
+                        <div class="type-stat">
+                            <span class="stat-label">Timeline</span>
+                            <span class="stat-value">10-15 years</span>
+                        </div>
+                    </div>
+
+                    <h2>Who It's For</h2>
+                    <ul class="content-list">
+                        <li>Minimalists who don't need luxury</li>
+                        <li>People in low cost-of-living areas</li>
+                        <li>Those who want to retire as quickly as possible</li>
+                        <li>People comfortable with a tight budget</li>
+                    </ul>
+
+                    <div class="info-box warning">
+                        <div class="info-box-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        </div>
+                        <div class="info-box-content">
+                            <strong>Consideration</strong>
+                            <p>Lean FIRE leaves little room for unexpected expenses. Build an emergency fund and consider healthcare costs carefully.</p>
+                        </div>
+                    </div>
+                </article>
 
                 <!-- Barista FIRE -->
-                <div class="fire-type-card barista">
-                    <div class="fire-type-header">
-                        <h3>Barista FIRE</h3>
+                <article class="content-section" id="barista-fire">
+                    <h1>Barista FIRE</h1>
+                    <p class="lead">Semi-retirement with part-time work. Your investments cover most expenses while you work for benefits and extra income.</p>
+
+                    <div class="type-stats">
+                        <div class="type-stat">
+                            <span class="stat-label">Portfolio Coverage</span>
+                            <span class="stat-value">70-80% of expenses</span>
+                        </div>
+                        <div class="type-stat">
+                            <span class="stat-label">Target Portfolio</span>
+                            <span class="stat-value">£500K - £800K</span>
+                        </div>
+                        <div class="type-stat">
+                            <span class="stat-label">Work Required</span>
+                            <span class="stat-value">Part-time</span>
+                        </div>
                     </div>
-                    <p class="fire-type-desc">Semi-retirement with part-time work for benefits and extra income. Your investments cover most expenses.</p>
-                    <ul class="fire-type-points">
-                        <li>Work part-time for health insurance</li>
-                        <li>Investments cover 70-80% of expenses</li>
-                        <li>More flexibility than traditional retirement</li>
+
+                    <h2>Benefits</h2>
+                    <ul class="content-list">
+                        <li>Access to employer health insurance benefits</li>
+                        <li>Supplemental income reduces portfolio stress</li>
+                        <li>Social interaction and purpose from work</li>
                         <li>Great transition strategy before full FIRE</li>
                     </ul>
-                    <div class="fire-type-target">
-                        <span class="label">Target Portfolio</span>
-                        <span class="amount">£500K - £800K</span>
-                    </div>
-                </div>
+                </article>
 
                 <!-- Coast FIRE -->
-                <div class="fire-type-card coast">
-                    <div class="fire-type-header">
-                        <h3>Coast FIRE</h3>
+                <article class="content-section" id="coast-fire">
+                    <h1>Coast FIRE</h1>
+                    <p class="lead">You've saved enough that compound growth will fund your traditional retirement. Work only covers current expenses.</p>
+
+                    <div class="type-stats">
+                        <div class="type-stat">
+                            <span class="stat-label">Key Milestone</span>
+                            <span class="stat-value">£200K by age 30</span>
+                        </div>
+                        <div class="type-stat">
+                            <span class="stat-label">Strategy</span>
+                            <span class="stat-value">Front-load savings</span>
+                        </div>
+                        <div class="type-stat">
+                            <span class="stat-label">Retirement Age</span>
+                            <span class="stat-value">Traditional (60-67)</span>
+                        </div>
                     </div>
-                    <p class="fire-type-desc">You've saved enough that compound growth will fund retirement. Work only for current expenses.</p>
-                    <ul class="fire-type-points">
-                        <li>Front-load savings early in career</li>
-                        <li>Let compound interest do the work</li>
-                        <li>Reduce stress by securing future retirement</li>
-                        <li>Switch to passion projects or lower-paying jobs</li>
+
+                    <h2>How It Works</h2>
+                    <p>Save aggressively early in your career, then let compound interest do the heavy lifting. Once you hit your Coast FIRE number, you can:</p>
+                    <ul class="content-list">
+                        <li>Switch to a lower-paying job you love</li>
+                        <li>Work fewer hours</li>
+                        <li>Take more risks in your career</li>
+                        <li>Focus on work-life balance</li>
                     </ul>
-                    <div class="fire-type-target">
-                        <span class="label">Key Milestone</span>
-                        <span class="amount">£200K by age 30</span>
-                    </div>
-                </div>
+                </article>
 
                 <!-- Fat FIRE -->
-                <div class="fire-type-card fat">
-                    <div class="fire-type-header">
-                        <h3>Fat FIRE</h3>
+                <article class="content-section" id="fat-fire">
+                    <h1>Fat FIRE</h1>
+                    <p class="lead">Retire with a luxurious lifestyle. No compromises, no budgeting stress, full financial freedom.</p>
+
+                    <div class="type-stats">
+                        <div class="type-stat">
+                            <span class="stat-label">Annual Spending</span>
+                            <span class="stat-value">£100,000+</span>
+                        </div>
+                        <div class="type-stat">
+                            <span class="stat-label">Target Portfolio</span>
+                            <span class="stat-value">£2.5M+</span>
+                        </div>
+                        <div class="type-stat">
+                            <span class="stat-label">Timeline</span>
+                            <span class="stat-value">15-25 years</span>
+                        </div>
                     </div>
-                    <p class="fire-type-desc">Retire with a luxurious lifestyle. Target: £100k+ annual spending with a portfolio of £2.5M+.</p>
-                    <ul class="fire-type-points">
-                        <li>Maintain or upgrade current lifestyle</li>
-                        <li>Requires higher income or longer timeline</li>
-                        <li>More buffer for unexpected expenses</li>
-                        <li>Travel, hobbies, and experiences without limits</li>
+
+                    <h2>What It Allows</h2>
+                    <ul class="content-list">
+                        <li>Maintain or upgrade your current lifestyle</li>
+                        <li>Travel extensively and in comfort</li>
+                        <li>Large buffer for unexpected expenses</li>
+                        <li>Support family members financially</li>
+                        <li>Pursue expensive hobbies without limits</li>
                     </ul>
-                    <div class="fire-type-target">
-                        <span class="label">Target Portfolio</span>
-                        <span class="amount">£2.5M+</span>
+                </article>
+
+                <!-- Index Funds -->
+                <article class="content-section" id="index-funds">
+                    <div class="breadcrumb">
+                        <span>Learn</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                        <span>Investment Basics</span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <h1>Index Funds</h1>
+                    <p class="lead">Low-cost funds that track market indices like S&P 500 or FTSE 100. The backbone of most FIRE portfolios.</p>
 
-    <!-- Investment Vehicles Section -->
-    <section class="learn-section" id="investments">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-number">03</span>
-                <h2>Investment Vehicles</h2>
-            </div>
-            <p class="section-intro">Understanding where to put your money is crucial for building wealth efficiently.</p>
-
-            <div class="investment-grid">
-                <div class="investment-card">
-                    <h3>Index Funds</h3>
-                    <p>Low-cost funds that track market indices like S&P 500 or FTSE 100. The backbone of most FIRE portfolios due to diversification and low fees.</p>
-                    <div class="investment-stat">
-                        <span class="stat-label">Average Return</span>
-                        <span class="stat-value">7-10% annually</span>
-                    </div>
-                </div>
-
-                <div class="investment-card">
-                    <h3>ISAs & Pensions</h3>
-                    <p>Tax-advantaged accounts in the UK. Stocks & Shares ISA allows £20k/year tax-free. Pensions offer tax relief on contributions.</p>
-                    <div class="investment-stat">
-                        <span class="stat-label">ISA Limit</span>
-                        <span class="stat-value">£20,000/year</span>
-                    </div>
-                </div>
-
-                <div class="investment-card">
-                    <h3>Real Estate</h3>
-                    <p>Rental properties or REITs for passive income and diversification. Can accelerate your FIRE timeline with leveraged returns.</p>
-                    <div class="investment-stat">
-                        <span class="stat-label">Target Returns</span>
-                        <span class="stat-value">8-12% cash-on-cash</span>
-                    </div>
-                </div>
-
-                <div class="investment-card">
-                    <h3>Bonds</h3>
-                    <p>Lower risk, steady income. Increase allocation as you approach FIRE for portfolio stability and reduced volatility.</p>
-                    <div class="investment-stat">
-                        <span class="stat-label">Common Rule</span>
-                        <span class="stat-value">Age = Bond %</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- The 4% Rule Section -->
-    <section class="learn-section alt-bg" id="calculator">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <h2>The 4% Rule Explained</h2>
-            </div>
-
-            <div class="rule-explainer">
-                <div class="rule-content">
-                    <p class="rule-intro">The 4% Rule is the foundation of FIRE planning. It determines how much you need to save to retire.</p>
-
-                    <div class="formula-box">
-                        <div class="formula">
-                            <span class="formula-label">FIRE Number</span>
-                            <span class="formula-equals">=</span>
-                            <span class="formula-calc">Annual Expenses x 25</span>
+                    <div class="type-stats">
+                        <div class="type-stat">
+                            <span class="stat-label">Average Return</span>
+                            <span class="stat-value">7-10% annually</span>
+                        </div>
+                        <div class="type-stat">
+                            <span class="stat-label">Typical Fees</span>
+                            <span class="stat-value">0.03% - 0.20%</span>
                         </div>
                     </div>
 
-                    <div class="rule-explanation">
-                        <h4>Why does this work?</h4>
-                        <p>The Trinity Study found that withdrawing 4% of your portfolio annually gives you a 95% chance of your money lasting 30+ years. Since 4% x 25 = 100%, you need 25 times your annual expenses.</p>
+                    <h2>Why Index Funds?</h2>
+                    <ul class="content-list">
+                        <li><strong>Low fees:</strong> Expense ratios as low as 0.03%</li>
+                        <li><strong>Diversification:</strong> Own hundreds of companies in one fund</li>
+                        <li><strong>Simplicity:</strong> No stock picking or market timing required</li>
+                        <li><strong>Proven track record:</strong> Outperforms most actively managed funds</li>
+                    </ul>
+
+                    <h2>Popular Choices</h2>
+                    <ul class="content-list">
+                        <li>Vanguard FTSE Global All Cap Index Fund</li>
+                        <li>Vanguard S&P 500 UCITS ETF</li>
+                        <li>iShares Core MSCI World UCITS ETF</li>
+                    </ul>
+                </article>
+
+                <!-- ISAs & Pensions -->
+                <article class="content-section" id="isas-pensions">
+                    <h1>ISAs & Pensions</h1>
+                    <p class="lead">Tax-advantaged accounts are crucial for maximizing your wealth. Every pound saved in tax is a pound invested.</p>
+
+                    <h2>Stocks & Shares ISA</h2>
+                    <div class="type-stats">
+                        <div class="type-stat">
+                            <span class="stat-label">Annual Limit</span>
+                            <span class="stat-value">£20,000</span>
+                        </div>
+                        <div class="type-stat">
+                            <span class="stat-label">Tax on Growth</span>
+                            <span class="stat-value">0%</span>
+                        </div>
+                        <div class="type-stat">
+                            <span class="stat-label">Withdrawal</span>
+                            <span class="stat-value">Anytime, tax-free</span>
+                        </div>
                     </div>
 
-                    <div class="example-box">
-                        <h4>Example Calculation</h4>
-                        <div class="example-calc">
-                            <div class="calc-row">
-                                <span>Monthly Expenses</span>
-                                <span>£3,000</span>
-                            </div>
-                            <div class="calc-row">
-                                <span>Annual Expenses (x12)</span>
-                                <span>£36,000</span>
-                            </div>
-                            <div class="calc-row highlight">
-                                <span>FIRE Number (x25)</span>
-                                <span>£900,000</span>
+                    <h2>Pensions (SIPP)</h2>
+                    <ul class="content-list">
+                        <li>Tax relief on contributions (20-45% depending on income)</li>
+                        <li>Employer matching (free money!)</li>
+                        <li>Accessible from age 55 (rising to 57)</li>
+                        <li>25% tax-free lump sum at retirement</li>
+                    </ul>
+
+                    <div class="info-box">
+                        <div class="info-box-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                        </div>
+                        <div class="info-box-content">
+                            <strong>FIRE Strategy</strong>
+                            <p>Max out ISA first for flexibility, then contribute to pension for tax benefits. Use ISA to bridge the gap until pension access age.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Real Estate -->
+                <article class="content-section" id="real-estate">
+                    <h1>Real Estate</h1>
+                    <p class="lead">Property investment can accelerate your FIRE journey through rental income and leveraged appreciation.</p>
+
+                    <div class="type-stats">
+                        <div class="type-stat">
+                            <span class="stat-label">Target Returns</span>
+                            <span class="stat-value">8-12% cash-on-cash</span>
+                        </div>
+                        <div class="type-stat">
+                            <span class="stat-label">Passive Option</span>
+                            <span class="stat-value">REITs</span>
+                        </div>
+                    </div>
+
+                    <h2>Options</h2>
+                    <ul class="content-list">
+                        <li><strong>Buy-to-let:</strong> Direct property ownership with rental income</li>
+                        <li><strong>REITs:</strong> Real Estate Investment Trusts - property exposure through stocks</li>
+                        <li><strong>Crowdfunding:</strong> Invest in property with smaller amounts</li>
+                    </ul>
+                </article>
+
+                <!-- Bonds -->
+                <article class="content-section" id="bonds">
+                    <h1>Bonds</h1>
+                    <p class="lead">Lower risk, steady income. Important for portfolio stability as you approach FIRE.</p>
+
+                    <div class="type-stats">
+                        <div class="type-stat">
+                            <span class="stat-label">Common Rule</span>
+                            <span class="stat-value">Age = Bond %</span>
+                        </div>
+                        <div class="type-stat">
+                            <span class="stat-label">Typical Return</span>
+                            <span class="stat-value">3-5% annually</span>
+                        </div>
+                    </div>
+
+                    <h2>Role in FIRE</h2>
+                    <ul class="content-list">
+                        <li>Reduce portfolio volatility</li>
+                        <li>Provide stable income in retirement</li>
+                        <li>Rebalancing buffer during market crashes</li>
+                        <li>Sleep-at-night factor for risk-averse investors</li>
+                    </ul>
+                </article>
+
+                <!-- Saving Tips -->
+                <article class="content-section" id="saving-tips">
+                    <div class="breadcrumb">
+                        <span>Learn</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                        <span>Strategies</span>
+                    </div>
+                    <h1>Saving Tips</h1>
+                    <p class="lead">Practical strategies to maximize your savings rate and accelerate your path to FIRE.</p>
+
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <div class="tip-number">1</div>
+                            <div class="tip-content">
+                                <h3>Pay Yourself First</h3>
+                                <p>Automate savings to investment accounts on payday. Treat savings like a non-negotiable bill.</p>
                             </div>
                         </div>
-                        <p class="example-note">With £900,000 invested, you can safely withdraw £36,000/year (4%) to cover your expenses.</p>
+                        <div class="tip-item">
+                            <div class="tip-number">2</div>
+                            <div class="tip-content">
+                                <h3>Track Your Net Worth</h3>
+                                <p>Monthly tracking keeps you motivated and helps identify spending leaks.</p>
+                            </div>
+                        </div>
+                        <div class="tip-item">
+                            <div class="tip-number">3</div>
+                            <div class="tip-content">
+                                <h3>Optimize the Big 3</h3>
+                                <p>Housing, transportation, and food are 60-70% of most budgets. Small wins here have massive impact.</p>
+                            </div>
+                        </div>
+                        <div class="tip-item">
+                            <div class="tip-number">4</div>
+                            <div class="tip-content">
+                                <h3>Increase Income</h3>
+                                <p>While cutting expenses has limits, income growth is unlimited. Negotiate raises, switch jobs, build side income.</p>
+                            </div>
+                        </div>
+                        <div class="tip-item">
+                            <div class="tip-number">5</div>
+                            <div class="tip-content">
+                                <h3>Tax Efficiency</h3>
+                                <p>Use ISAs and pensions to shelter investments from tax. Tax saved is money earned.</p>
+                            </div>
+                        </div>
+                        <div class="tip-item">
+                            <div class="tip-number">6</div>
+                            <div class="tip-content">
+                                <h3>Stay the Course</h3>
+                                <p>Market dips are normal. Don't panic sell. Time in the market beats timing the market.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Common Mistakes -->
+                <article class="content-section" id="mistakes">
+                    <h1>Common Mistakes</h1>
+                    <p class="lead">Avoid these pitfalls on your journey to financial independence.</p>
+
+                    <div class="mistakes-list">
+                        <div class="mistake-item">
+                            <h3>Lifestyle Inflation</h3>
+                            <p>As income grows, expenses often grow too. Keep lifestyle costs flat while income increases. Save your raises.</p>
+                        </div>
+                        <div class="mistake-item">
+                            <h3>Timing the Market</h3>
+                            <p>Studies consistently show that time IN the market beats timing the market. Stick to your investment plan.</p>
+                        </div>
+                        <div class="mistake-item">
+                            <h3>Ignoring Healthcare</h3>
+                            <p>Early retirees face healthcare costs before state pension age. Budget for private health insurance.</p>
+                        </div>
+                        <div class="mistake-item">
+                            <h3>No Emergency Fund</h3>
+                            <p>Keep 3-6 months of expenses in liquid savings. This prevents selling investments at a loss during emergencies.</p>
+                        </div>
+                        <div class="mistake-item">
+                            <h3>Neglecting the Present</h3>
+                            <p>FIRE is a marathon, not a sprint. Find balance between saving for tomorrow and living today.</p>
+                        </div>
+                        <div class="mistake-item">
+                            <h3>No Plan for Retirement</h3>
+                            <p>Know what you'll do when you FIRE. Have hobbies, projects, or part-time work planned.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CTA -->
+                <div class="content-cta">
+                    <h2>Ready to Start Your FIRE Journey?</h2>
+                    <p>Download Retire Early to calculate your number and track your progress.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="store-badge">
+                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                        </a>
+                        <a href="#" class="store-badge">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                        </a>
                     </div>
                 </div>
+
             </div>
-        </div>
-    </section>
-
-    <!-- Pro Tips Section -->
-    <section class="learn-section" id="tips">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-number">05</span>
-                <h2>Pro Tips for FIRE</h2>
-            </div>
-
-            <div class="tips-grid">
-                <div class="tip-card">
-                    <div class="tip-number">1</div>
-                    <h3>Pay Yourself First</h3>
-                    <p>Automate savings to investment accounts on payday. Treat savings like a non-negotiable bill. What you don't see, you won't spend.</p>
-                </div>
-
-                <div class="tip-card">
-                    <div class="tip-number">2</div>
-                    <h3>Track Your Net Worth</h3>
-                    <p>Monthly tracking keeps you motivated and helps identify spending leaks. Watching your number grow is incredibly motivating.</p>
-                </div>
-
-                <div class="tip-card">
-                    <div class="tip-number">3</div>
-                    <h3>Optimize the Big 3</h3>
-                    <p>Housing, transportation, and food are 60-70% of most budgets. Small wins in these categories have massive long-term impact.</p>
-                </div>
-
-                <div class="tip-card">
-                    <div class="tip-number">4</div>
-                    <h3>Increase Income</h3>
-                    <p>While cutting expenses has limits, income growth is unlimited. Negotiate raises, switch jobs, start side hustles, or build passive income.</p>
-                </div>
-
-                <div class="tip-card">
-                    <div class="tip-number">5</div>
-                    <h3>Tax Efficiency</h3>
-                    <p>Use ISAs to shelter investments from tax. Maximize pension contributions for tax relief. Tax saved is money earned.</p>
-                </div>
-
-                <div class="tip-card">
-                    <div class="tip-number">6</div>
-                    <h3>Stay the Course</h3>
-                    <p>Market dips are normal. Don't panic sell. Time in the market beats timing the market. Keep investing through the ups and downs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mistakes to Avoid Section -->
-    <section class="learn-section alt-bg" id="mistakes">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-number">06</span>
-                <h2>Common Mistakes to Avoid</h2>
-            </div>
-
-            <div class="mistakes-grid">
-                <div class="mistake-card">
-                    <h3>Lifestyle Inflation</h3>
-                    <p>As income grows, expenses often grow too. The key to FIRE is keeping lifestyle costs flat while income increases. Save your raises.</p>
-                </div>
-
-                <div class="mistake-card">
-                    <h3>Timing the Market</h3>
-                    <p>Studies consistently show that time IN the market beats timing the market. Stick to your investment plan regardless of market conditions.</p>
-                </div>
-
-                <div class="mistake-card">
-                    <h3>Ignoring Healthcare</h3>
-                    <p>Early retirees face healthcare costs before state pension age. Budget for private health insurance or out-of-pocket expenses.</p>
-                </div>
-
-                <div class="mistake-card">
-                    <h3>No Emergency Fund</h3>
-                    <p>Keep 3-6 months of expenses in liquid savings. This prevents selling investments at a loss during market downturns or unexpected expenses.</p>
-                </div>
-
-                <div class="mistake-card">
-                    <h3>Neglecting the Present</h3>
-                    <p>FIRE is a marathon, not a sprint. Don't sacrifice all enjoyment today. Find balance between saving for tomorrow and living today.</p>
-                </div>
-
-                <div class="mistake-card">
-                    <h3>No Plan for Retirement</h3>
-                    <p>Know what you'll do when you FIRE. Many struggle with purpose after leaving work. Have hobbies, projects, or part-time work planned.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="cta-container">
-            <h2 class="cta-title">Ready to Start Your FIRE Journey?</h2>
-            <p class="cta-subtitle">Download Retire Early to calculate your number and track your progress</p>
-            <div class="cta-buttons">
-                <a href="#" class="store-badge">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-                </a>
-                <a href="#" class="store-badge">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
-                </a>
-            </div>
-        </div>
-    </section>
+        </main>
+    </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer learn-footer">
         <div class="footer-container">
             <div class="footer-brand">
                 <div class="footer-logo">
@@ -421,8 +582,8 @@
                 <div class="footer-column">
                     <h4>Learn</h4>
                     <a href="#what-is-fire">What is FIRE?</a>
-                    <a href="#fire-types">FIRE Types</a>
-                    <a href="#calculator">4% Rule</a>
+                    <a href="#lean-fire">FIRE Types</a>
+                    <a href="#four-percent-rule">4% Rule</a>
                 </div>
                 <div class="footer-column">
                     <h4>Legal</h4>
@@ -438,7 +599,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 Retire Early. All rights reserved.</p>
+            <p>&copy; 2025 Retire Early. All rights reserved.</p>
             <p class="disclaimer">Retire Early provides tools for financial planning. This is not financial advice. Please consult a qualified financial advisor for personalized guidance.</p>
         </div>
     </footer>
@@ -453,6 +614,73 @@
             navToggle.classList.toggle('active');
         });
 
+        // Sidebar toggle for mobile
+        const sidebarToggle = document.querySelector('.sidebar-toggle');
+        const sidebar = document.querySelector('.learn-sidebar');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+        function openSidebar() {
+            sidebar.classList.add('active');
+            sidebarOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove('active');
+            sidebarOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        sidebarToggle.addEventListener('click', () => {
+            if (sidebar.classList.contains('active')) {
+                closeSidebar();
+            } else {
+                openSidebar();
+            }
+        });
+
+        sidebarOverlay.addEventListener('click', closeSidebar);
+
+        // Close button inside sidebar
+        const sidebarClose = document.querySelector('.sidebar-close');
+        sidebarClose.addEventListener('click', closeSidebar);
+
+        // Close sidebar when clicking a link on mobile
+        document.querySelectorAll('.sidebar-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 968) {
+                    closeSidebar();
+                }
+            });
+        });
+
+        // Active link highlighting based on scroll
+        const sections = document.querySelectorAll('.content-section');
+        const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+        function updateActiveLink() {
+            let current = '';
+            const scrollPos = window.scrollY + 150;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            sidebarLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveLink);
+        updateActiveLink();
+
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -462,8 +690,6 @@
                     const navHeight = document.querySelector('.nav').offsetHeight;
                     const targetPosition = target.offsetTop - navHeight - 20;
                     window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-                    navLinks.classList.remove('active');
-                    navToggle.classList.remove('active');
                 }
             });
         });
