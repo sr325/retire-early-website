@@ -1,4 +1,4 @@
-/* Learn Page Styles - Minimalist */
+/* Help Page Styles - Mirrors Learn page layout */
 
 /* Active nav link */
 .nav-links a.active {
@@ -6,24 +6,24 @@
     font-weight: 600;
 }
 
-/* Learn Page Body */
-.learn-page {
+/* Help Page Body */
+.help-page {
     background: #ffffff;
 }
 
-.learn-page .nav {
+.help-page .nav {
     background: #0F172A;
 }
 
 /* Main Layout */
-.learn-layout {
+.help-layout {
     display: flex;
     min-height: calc(100vh - 72px);
     padding-top: 72px;
 }
 
 /* Sidebar */
-.learn-sidebar {
+.help-sidebar {
     width: 280px;
     flex-shrink: 0;
     background: #fafafa;
@@ -165,13 +165,13 @@
 }
 
 /* Main Content */
-.learn-main {
+.help-main {
     flex: 1;
     margin-left: 280px;
     min-width: 0;
 }
 
-.learn-content {
+.help-content {
     max-width: 720px;
     margin: 0 auto;
     padding: 3rem 2rem 4rem;
@@ -263,128 +263,30 @@
     font-weight: 600;
 }
 
-/* Simple Table */
-.simple-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0 1.5rem;
-}
-
-.simple-table td {
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid #eee;
-    color: #444;
-    font-size: 0.95rem;
-}
-
-.simple-table td:last-child {
-    text-align: right;
-    font-weight: 600;
-    color: #222;
-}
-
-.simple-table tr.highlight {
-    background: #111;
-}
-
-.simple-table tr.highlight td {
-    color: #fff;
-    border-bottom-color: #333;
-    font-weight: 600;
-}
-
-.simple-table tr.highlight td:last-child {
-    color: #3b82f6;
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-/* Stats Row */
-.stats-row {
-    display: flex;
-    gap: 1.5rem;
-    margin: 1.25rem 0;
-    flex-wrap: wrap;
-}
-
-.stats-row > div {
-    display: flex;
-    flex-direction: column;
-    gap: 0.15rem;
-}
-
-.stat-label {
-    display: block;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #999;
-    font-weight: 600;
-}
-
-.stat-val {
-    display: block;
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: #3b82f6;
-}
-
-/* Content CTA */
-.content-cta {
-    text-align: center;
-    padding: 3rem 2rem;
-    background: #111;
-    border-radius: 12px;
-    color: white;
-    margin-top: 2rem;
-}
-
-.content-cta h2 {
-    color: white;
-    font-size: 1.5rem;
-    margin: 0 0 0.5rem;
-}
-
-.content-cta p {
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 1.5rem;
-}
-
-.content-cta .cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.content-cta .store-badge img {
-    height: 44px;
-}
-
-/* Learn Footer */
-.learn-footer {
+/* Help Footer */
+.help-footer {
     margin-left: 280px;
 }
 
 /* Responsive */
 @media (max-width: 1100px) {
-    .learn-sidebar {
+    .help-sidebar {
         width: 240px;
     }
-    .learn-main {
+    .help-main {
         margin-left: 240px;
     }
-    .learn-footer {
+    .help-footer {
         margin-left: 240px;
     }
 }
 
 @media (max-width: 968px) {
-    .learn-layout {
+    .help-layout {
         padding-top: 72px;
     }
 
-    .learn-sidebar {
+    .help-sidebar {
         transform: translateX(-100%);
         transition: transform 0.3s ease;
         width: 300px;
@@ -396,7 +298,7 @@
         padding-top: 72px;
     }
 
-    .learn-sidebar.active {
+    .help-sidebar.active {
         transform: translateX(0);
     }
 
@@ -412,29 +314,25 @@
         display: flex;
     }
 
-    .learn-main {
+    .help-main {
         margin-left: 0;
     }
 
-    .learn-content {
+    .help-content {
         padding: 2rem 1.25rem;
     }
 
-    .learn-footer {
+    .help-footer {
         margin-left: 0;
     }
 
     .content-section h1 {
         font-size: 1.75rem;
     }
-
-    .stats-row {
-        gap: 1rem;
-    }
 }
 
 @media (max-width: 640px) {
-    .learn-content {
+    .help-content {
         padding: 1.5rem 1rem;
     }
 
@@ -456,18 +354,5 @@
     .formula-eq,
     .formula-input {
         font-size: 1.1rem;
-    }
-
-    .content-cta {
-        padding: 2rem 1.25rem;
-    }
-
-    .content-cta h2 {
-        font-size: 1.3rem;
-    }
-
-    .stats-row {
-        flex-direction: column;
-        gap: 0.75rem;
     }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Retire Early - Your path to financial independence. Calculate your FIRE number, track progress, and plan scenarios.">
+    <meta name="description" content="Retire Early - Plan your FIRE journey with smart calculators, scenario planning, and wealth projections. Know exactly when you can retire.">
     <title>Retire Early - Your Path to Financial Independence</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +14,13 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
-            <a href="/" class="nav-logo">
-                <span class="logo-text">Retire Early</span>
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">RETIRE EARLY</span>
             </a>
             <div class="nav-links">
-                <a href="#features">Features</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="learn.html">Learn</a>
                 <a href="help.html">Help</a>
-                <a href="#download" class="nav-cta">Download</a>
             </div>
             <button class="nav-toggle" aria-label="Toggle menu">
                 <span></span>
@@ -36,143 +35,54 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    Your Path to<br>
-                    <span class="highlight">Financial Independence</span>
+                    Know When You<br>
+                    Can <span class="highlight">Retire Early</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Plan your FIRE journey with smart calculators, scenario planning, and wealth projections. Know exactly when you can retire.
+                    Calculate your FIRE number, track your progress with wealth projections, and plan life scenarios. All based on the 4% safe withdrawal rule.
                 </p>
                 <div class="hero-buttons">
                     <a href="#" class="store-badge">
                         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
                     </a>
                 </div>
-                <p class="hero-note">Free to download. No credit card required.</p>
+                <p class="hero-note">Free to download. Premium features available for £5 per month.</p>
             </div>
             <div class="hero-image">
-                <div class="phone-mockup">
+                <div class="phone-mockup interactive-phone">
                     <div class="phone-screen">
-                        <div class="app-preview">
-                            <div class="preview-header">
-                                <span class="preview-greeting">Morning</span>
-                                <span class="preview-name">Sandesh</span>
-                            </div>
-                            <div class="preview-amount">£1.5M</div>
-                            <div class="preview-label">FIRE GOAL</div>
-                            <div class="preview-timeline">15 years to retire</div>
+                        <div class="app-screens">
+                            <img src="resources/calculator_1.png" class="app-screen active" data-tab="calculator" alt="Calculator">
+                            <img src="resources/screenshot_7.png" class="app-screen" data-tab="dashboard" alt="Dashboard">
+                            <img src="resources/screenshot_4.png" class="app-screen" data-tab="planning" alt="Planning">
+                            <img src="resources/screenshot_6.png" class="app-screen" data-tab="learn" alt="Learn">
+                            <img src="resources/screenshot_5.png" class="app-screen" data-tab="profile" alt="Profile">
+                        </div>
+                        <div class="app-tab-bar">
+                            <button class="app-tab active" data-tab="calculator">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="14" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="14" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="10" y2="18"/><line x1="14" y1="18" x2="16" y2="18"/></svg>
+                                <span>Calculator</span>
+                            </button>
+                            <button class="app-tab" data-tab="dashboard">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                                <span>Dashboard</span>
+                            </button>
+                            <button class="app-tab" data-tab="planning">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
+                                <span>Planning</span>
+                            </button>
+                            <button class="app-tab" data-tab="learn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                                <span>Learn</span>
+                            </button>
+                            <button class="app-tab" data-tab="profile">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                <span>Profile</span>
+                            </button>
                         </div>
                     </div>
+                    <p class="phone-hint">Tap the tabs to explore</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="features-container">
-            <h2 class="section-title">Why Retire Early?</h2>
-            <p class="section-subtitle">Everything you need to plan your financial independence</p>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3 class="feature-title">FIRE Calculator</h3>
-                    <p class="feature-description">
-                        Calculate your FIRE number based on the 4% rule. Enter your income, expenses, and portfolio to see your personalized timeline.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <h3 class="feature-title">Track Progress</h3>
-                    <p class="feature-description">
-                        Visualize your wealth projection with beautiful charts. See milestones and track your journey to financial freedom.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <h3 class="feature-title">Scenario Planning</h3>
-                    <p class="feature-description">
-                        Test "what-if" scenarios. See how buying a house, having kids, or changing careers affects your FIRE timeline.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="how-container">
-            <h2 class="section-title">How It Works</h2>
-            <p class="section-subtitle">Start your FIRE journey in minutes</p>
-
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3 class="step-title">Enter Your Finances</h3>
-                    <p class="step-description">Add your income, expenses, savings, and current portfolio. The more detail, the more accurate your plan.</p>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3 class="step-title">See Your Timeline</h3>
-                    <p class="step-description">Instantly see your FIRE number and how many years until you can retire based on the 4% safe withdrawal rule.</p>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3 class="step-title">Plan Life Events</h3>
-                    <p class="step-description">Add scenarios like buying a home, having children, or taking a sabbatical. See how each affects your timeline.</p>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3 class="step-title">Track & Adjust</h3>
-                    <p class="step-description">Monitor your progress over time. Adjust your plan as life changes and stay on track to financial freedom.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- App Screenshots Section -->
-    <section class="screenshots" id="screenshots">
-        <div class="screenshots-container">
-            <h2 class="section-title">See It In Action</h2>
-            <p class="section-subtitle">A sneak peek at your financial planning companion</p>
-
-            <div class="screenshots-grid">
-                <div class="screenshot-item">
-                    <div class="phone-frame">
-                        <img src="images/screenshot-dashboard.png" alt="Dashboard">
-                    </div>
-                    <p class="screenshot-label">Dashboard</p>
-                </div>
-                <div class="screenshot-item">
-                    <div class="phone-frame">
-                        <img src="images/screenshot-calculator.png" alt="Calculator">
-                    </div>
-                    <p class="screenshot-label">Calculator</p>
-                </div>
-                <div class="screenshot-item">
-                    <div class="phone-frame">
-                        <img src="images/screenshot-scenarios.png" alt="Scenarios">
-                    </div>
-                    <p class="screenshot-label">Scenarios</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta" id="download">
-        <div class="cta-container">
-            <h2 class="cta-title">Ready to Start Your FIRE Journey?</h2>
-            <p class="cta-subtitle">Join thousands planning their path to financial independence</p>
-            <div class="cta-buttons">
-                <a href="#" class="store-badge">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-                </a>
-                <a href="#" class="store-badge">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
-                </a>
             </div>
         </div>
     </section>
@@ -182,34 +92,29 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <span class="logo-text">Retire Early</span>
+                    <span class="logo-text">RETIRE EARLY</span>
                 </div>
                 <p class="footer-tagline">Your path to financial independence</p>
             </div>
 
             <div class="footer-links">
                 <div class="footer-column">
-                    <h4>Learn</h4>
-                    <a href="learn.html">FIRE Guide</a>
-                    <a href="learn.html#fire-types">FIRE Types</a>
-                    <a href="learn.html#calculator">4% Rule</a>
+                    <h4>Pages</h4>
+                    <a href="index.html">Home</a>
+                    <a href="learn.html">Learn</a>
+                    <a href="help.html">Help</a>
                 </div>
                 <div class="footer-column">
                     <h4>Legal</h4>
                     <a href="privacy.html">Privacy Policy</a>
                     <a href="terms.html">Terms of Service</a>
                 </div>
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <a href="help.html">Help & FAQ</a>
-                    <a href="contact.html">Contact Us</a>
-                </div>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 Retire Early. All rights reserved.</p>
-            <p class="disclaimer">Retire Early provides tools for financial planning. This is not financial advice. Please consult a qualified financial advisor for personalized guidance.</p>
+            <p>&copy; 2026 Retire Early. All rights reserved.</p>
+            <p class="disclaimer">This app is for educational and informational purposes only. We are not professional financial advisors. Please consult a qualified financial advisor before making any investment decisions.</p>
         </div>
     </footer>
 
@@ -244,6 +149,20 @@
             } else {
                 nav.classList.remove('scrolled');
             }
+        });
+
+        // Interactive phone tab switching
+        const appTabs = document.querySelectorAll('.app-tab');
+        const appScreens = document.querySelectorAll('.app-screen');
+
+        appTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = tab.dataset.tab;
+                appTabs.forEach(t => t.classList.remove('active'));
+                appScreens.forEach(s => s.classList.remove('active'));
+                tab.classList.add('active');
+                document.querySelector(`.app-screen[data-tab="${target}"]`).classList.add('active');
+            });
         });
     </script>
 </body>
