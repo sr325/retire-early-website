@@ -4,55 +4,290 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MY FIRE JOURNEY Terms of Service">
-    <title>Terms of Service - MY FIRE JOURNEY</title>
+    <title>Terms of Service — MY FIRE JOURNEY</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .legal-page {
-            padding: 8rem 2rem 4rem;
-            max-width: 800px;
+        /* Terms Header Banner */
+        .terms-header {
+            background: #1A1A1A;
+            color: #FFFFFF;
+            padding: 120px 24px 50px;
+            text-align: center;
+        }
+
+        .terms-header-inner {
+            max-width: 720px;
             margin: 0 auto;
-            min-height: 100vh;
         }
-        .legal-page h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--secondary);
+
+        .terms-header-label {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            opacity: 0.5;
+            margin-bottom: 16px;
         }
-        .legal-page .updated {
-            color: var(--text-light);
-            margin-bottom: 3rem;
+
+        .terms-header h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 42px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: #FFFFFF;
         }
-        .legal-page h2 {
-            font-size: 1.5rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--secondary);
+
+        .terms-header-meta {
+            font-size: 14px;
+            opacity: 0.55;
+            line-height: 1.6;
         }
-        .legal-page p, .legal-page li {
-            color: var(--text-light);
+
+        /* Disclaimer Banner */
+        .disclaimer-banner {
+            max-width: 720px;
+            margin: -24px auto 0;
+            padding: 0 24px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .disclaimer-card {
+            background: #FFF8F0;
+            border: 1px solid #E8DCCF;
+            border-radius: 10px;
+            padding: 24px 28px;
+        }
+
+        .disclaimer-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #6B4F2E;
+            margin-bottom: 10px;
+        }
+
+        .disclaimer-icon svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        .disclaimer-card p {
+            font-size: 14.5px;
+            line-height: 1.7;
+            color: #6B4F2E;
+            margin-bottom: 0;
+        }
+
+        /* Terms Content */
+        .terms-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+            background: #FAFAFA;
+        }
+
+        .terms-bg {
+            background: #FAFAFA;
+        }
+
+        .terms-intro {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 17px;
             line-height: 1.8;
-            margin-bottom: 1rem;
+            color: #555555;
+            margin-bottom: 48px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #E5E5E5;
         }
-        .legal-page ul {
-            padding-left: 1.5rem;
-            margin-bottom: 1rem;
+
+        .terms-intro a {
+            color: #2A2A2A;
+            text-decoration: underline;
+            text-underline-offset: 2px;
         }
-        .legal-page a {
-            color: var(--primary);
+
+        .terms-intro a:hover {
+            opacity: 0.7;
         }
-        .legal-page .highlight-box {
-            background: #FEF3C7;
-            border-left: 4px solid #F59E0B;
-            padding: 1rem 1.5rem;
-            margin: 1.5rem 0;
+
+        /* Sections */
+        .terms-section {
+            margin-bottom: 44px;
+        }
+
+        .section-number {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #888888;
+            margin-bottom: 6px;
+        }
+
+        .terms-section h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 26px;
+            font-weight: 400;
+            margin-bottom: 16px;
+            color: #111111;
+        }
+
+        .terms-section p {
+            font-family: 'DM Sans', sans-serif;
+            color: #555555;
+            margin-bottom: 14px;
+            font-size: 15.5px;
+            line-height: 1.7;
+        }
+
+        .terms-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .terms-section a {
+            color: #2A2A2A;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .terms-section a:hover {
+            opacity: 0.7;
+        }
+
+        /* Sub-section heading */
+        .sub-heading {
+            font-weight: 600;
+            font-size: 15px;
+            color: #111111;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        /* Data List */
+        .data-list {
+            list-style: none;
+            padding: 0;
+            margin: 16px 0;
+        }
+
+        .data-list li {
+            position: relative;
+            padding: 12px 0 12px 20px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            color: #555555;
+            border-bottom: 1px solid #F5F5F5;
+            line-height: 1.7;
+        }
+
+        .data-list li:last-child {
+            border-bottom: none;
+        }
+
+        .data-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 19px;
+            width: 6px;
+            height: 6px;
+            background: #888888;
+            border-radius: 50%;
+        }
+
+        .data-list li strong {
+            color: #111111;
+            font-weight: 600;
+        }
+
+        .data-list li a {
+            color: #2A2A2A;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .data-list li a:hover {
+            opacity: 0.7;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: #F5F5F5;
+            border-left: 3px solid #888888;
             border-radius: 0 8px 8px 0;
+            padding: 20px 24px;
+            margin: 20px 0;
         }
-        .legal-page .highlight-box p {
-            margin: 0;
-            color: #92400E;
+
+        .highlight-box p {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14.5px;
+            color: #555555;
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Contact Card */
+        .contact-card {
+            background: #1A1A1A;
+            color: #FFFFFF;
+            border-radius: 10px;
+            padding: 32px;
+            margin-top: 48px;
+            text-align: center;
+        }
+
+        .contact-card h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: #FFFFFF;
+        }
+
+        .contact-card p {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14.5px;
+            opacity: 0.65;
+            margin-bottom: 16px;
+            color: #FFFFFF;
+        }
+
+        .contact-card a {
+            color: #FFFFFF;
+            font-weight: 600;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            font-size: 15px;
+        }
+
+        .contact-card a:hover {
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .terms-header { padding: 100px 20px 42px; }
+            .terms-header h1 { font-size: 32px; }
+            .terms-content { padding: 40px 20px 60px; }
+            .terms-section h2 { font-size: 22px; }
+            .disclaimer-card { padding: 20px 22px; }
         }
     </style>
 </head>
@@ -71,89 +306,248 @@
         </div>
     </nav>
 
-    <main class="legal-page">
-        <h1>Terms of Service</h1>
-        <p class="updated">Last updated: January 2026</p>
-
-        <p>Welcome to MY FIRE JOURNEY. By downloading, installing, or using our application, you agree to be bound by these Terms of Service.</p>
-
-        <h2>1. Acceptance of Terms</h2>
-        <p>By accessing or using FIRE App, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use our app.</p>
-
-        <h2>2. Description of Service</h2>
-        <p>MY FIRE JOURNEY is a personal finance planning tool that helps users:</p>
-        <ul>
-            <li>Calculate their FIRE (Financial Independence, Retire Early) number</li>
-            <li>Track income, expenses, and portfolio growth</li>
-            <li>Create and compare financial scenarios</li>
-            <li>Visualize their path to financial independence</li>
-        </ul>
-
-        <h2>3. Financial Disclaimer</h2>
-        <div class="highlight-box">
-            <p><strong>Important:</strong> FIRE App is an educational and planning tool only. It does NOT provide financial advice, investment advice, tax advice, or any other professional advice.</p>
+    <!-- Header -->
+    <header class="terms-header">
+        <div class="terms-header-inner">
+            <div class="terms-header-label">MY FIRE JOURNEY</div>
+            <h1>Terms of Service</h1>
+            <div class="terms-header-meta">Last updated: January 2026 &nbsp;&middot;&nbsp; Governed by the laws of England and Wales</div>
         </div>
-        <p>You acknowledge and agree that:</p>
-        <ul>
-            <li>All calculations, projections, and estimates are for informational purposes only</li>
-            <li>Past performance does not guarantee future results</li>
-            <li>The 4% rule and other financial models are theoretical and may not apply to your situation</li>
-            <li>You should consult with qualified financial, tax, and legal professionals before making financial decisions</li>
-            <li>We are not responsible for any financial decisions you make based on the app's calculations</li>
-        </ul>
+    </header>
 
-        <h2>4. User Responsibilities</h2>
-        <p>When using FIRE App, you agree to:</p>
-        <ul>
-            <li>Provide accurate information for calculations</li>
-            <li>Keep your account credentials secure</li>
-            <li>Use the app for personal, non-commercial purposes only</li>
-            <li>Not attempt to reverse engineer or modify the app</li>
-            <li>Not use the app for any unlawful purpose</li>
-        </ul>
+    <!-- Disclaimer Banner -->
+    <div class="disclaimer-banner">
+        <div class="disclaimer-card">
+            <div class="disclaimer-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                Important Disclaimer
+            </div>
+            <p>
+                MY FIRE JOURNEY is provided for <strong>educational and informational purposes only</strong>. The app, its content, tools, calculators, and any output they produce do not constitute professional financial, investment, tax, or legal advice. We are not qualified financial advisors, and nothing within the app should be interpreted as a personal recommendation. Please consult a qualified, FCA-regulated financial adviser before making any investment or financial planning decisions.
+            </p>
+        </div>
+    </div>
 
-        <h2>5. Accuracy of Information</h2>
-        <p>While we strive to provide accurate calculations:</p>
-        <ul>
-            <li>We do not guarantee the accuracy, completeness, or timeliness of any information</li>
-            <li>Financial projections are estimates based on assumptions that may not reflect reality</li>
-            <li>You are responsible for verifying any calculations before making decisions</li>
-        </ul>
+    <!-- Content -->
+    <div class="terms-bg">
+        <main class="terms-content">
 
-        <h2>6. Account Terms</h2>
-        <p>If you create an account:</p>
-        <ul>
-            <li>You must provide accurate and complete information</li>
-            <li>You are responsible for maintaining the security of your account</li>
-            <li>You must notify us immediately of any unauthorized access</li>
-            <li>We reserve the right to suspend or terminate accounts that violate these terms</li>
-        </ul>
+            <p class="terms-intro">
+                Welcome to MY FIRE JOURNEY ("we", "our", "us"). These Terms of Service ("Terms") govern your access to and use of the MY FIRE JOURNEY mobile application ("the App"). By downloading, installing, accessing, or using the App, you confirm that you have read, understood, and agree to be bound by these Terms and our <a href="privacy.html">Privacy Policy</a>. If you do not agree to any part of these Terms, you must not use the App.
+            </p>
 
-        <h2>7. Intellectual Property</h2>
-        <p>FIRE App and its original content, features, and functionality are owned by us and are protected by international copyright, trademark, and other intellectual property laws.</p>
+            <!-- 1 -->
+            <section class="terms-section">
+                <div class="section-number">Section 01</div>
+                <h2>Acceptance of Terms</h2>
+                <p>By creating an account or using any feature of MY FIRE JOURNEY, you enter into a legally binding agreement with us on the basis of these Terms. These Terms apply to all users of the App, including free and premium subscribers.</p>
+                <p>If you are using the App on behalf of another individual, you represent and warrant that you have the authority to bind that individual to these Terms. You must be at least 13 years of age to use the App. If you are under 18, you confirm that you have obtained the consent of a parent or legal guardian.</p>
+            </section>
 
-        <h2>8. Limitation of Liability</h2>
-        <p>To the maximum extent permitted by law:</p>
-        <ul>
-            <li>FIRE App is provided "as is" without warranties of any kind</li>
-            <li>We are not liable for any indirect, incidental, special, or consequential damages</li>
-            <li>We are not liable for any loss of profits, data, or financial losses</li>
-            <li>Our total liability shall not exceed the amount you paid for the app (if any)</li>
-        </ul>
+            <!-- 2 -->
+            <section class="terms-section">
+                <div class="section-number">Section 02</div>
+                <h2>Description of Service</h2>
+                <p>MY FIRE JOURNEY is a personal finance planning and educational tool designed to help users explore the principles of Financial Independence, Retire Early (FIRE). The App provides the following features:</p>
+                <ul class="data-list">
+                    <li><strong>FIRE Number Calculator</strong> — Estimate the savings target required to achieve financial independence based on your inputs.</li>
+                    <li><strong>Income, Expense &amp; Portfolio Tracking</strong> — Manually log your income, expenses, savings, and portfolio values to monitor your financial position over time.</li>
+                    <li><strong>Daily Expense Tracker</strong> — Record and categorise daily spending to help identify patterns and savings opportunities.</li>
+                    <li><strong>FIRE Readiness Quiz</strong> — A guided questionnaire to assess your current financial position relative to FIRE principles.</li>
+                    <li><strong>Scenario Planning</strong> — Create, compare, and evaluate multiple financial scenarios with different assumptions and timelines.</li>
+                    <li><strong>Milestones</strong> — Set and track progress towards personalised financial goals and milestones on your FIRE journey.</li>
+                    <li><strong>Visualisation &amp; Projections</strong> — Charts and projections to visualise your estimated path to financial independence.</li>
+                </ul>
+                <p>We may add, modify, or discontinue features at any time. We will make reasonable efforts to notify users of significant changes to core functionality.</p>
+            </section>
 
-        <h2>9. Changes to Terms</h2>
-        <p>We reserve the right to modify these Terms of Service at any time. We will notify users of significant changes through the app or via email. Continued use of the app after changes constitutes acceptance of the new terms.</p>
+            <!-- 3 -->
+            <section class="terms-section">
+                <div class="section-number">Section 03</div>
+                <h2>Financial Disclaimer</h2>
+                <div class="highlight-box">
+                    <p><strong>This is critically important.</strong> MY FIRE JOURNEY is an educational and informational tool only. The App does <strong>not</strong> provide financial advice, investment advice, tax advice, legal advice, or any other form of professional advice. We are not financial advisors, tax advisors, or regulated by the Financial Conduct Authority (FCA).</p>
+                </div>
+                <p>By using the App, you expressly acknowledge and agree to the following:</p>
+                <ul class="data-list">
+                    <li>All calculations, projections, estimates, charts, and outputs generated by the App are for <strong>informational and educational purposes only</strong> and must not be relied upon as the basis for any financial decision.</li>
+                    <li>Past performance, historical data, and projected returns do not guarantee future results. Investment values can go down as well as up, and you may get back less than you invest.</li>
+                    <li>The 4% withdrawal rule, compound growth models, and other financial methodologies used in the App are theoretical frameworks based on historical assumptions. They may not accurately predict future outcomes or apply to your individual circumstances.</li>
+                    <li>The App does not account for all variables that may affect your financial situation, including but not limited to: inflation fluctuations, tax law changes, personal health events, market volatility, currency risk, or changes in government policy.</li>
+                    <li>You should always consult with a qualified, FCA-regulated financial adviser, tax professional, and/or legal professional before making any financial, investment, or retirement planning decisions.</li>
+                    <li>We accept no responsibility or liability for any financial decisions you make, or any financial losses you incur, based on information, calculations, or projections provided by the App.</li>
+                    <li>Nothing in the App constitutes a personal recommendation, solicitation, or offer to buy or sell any financial product, security, or investment.</li>
+                </ul>
+            </section>
 
-        <h2>10. Termination</h2>
-        <p>We may terminate or suspend your access to the app immediately, without prior notice, for any reason, including breach of these Terms. Upon termination, your right to use the app will cease immediately.</p>
+            <!-- 4 -->
+            <section class="terms-section">
+                <div class="section-number">Section 04</div>
+                <h2>User Responsibilities</h2>
+                <p>When using MY FIRE JOURNEY, you agree to the following obligations and responsibilities:</p>
+                <ul class="data-list">
+                    <li><strong>Accurate Information</strong> — You are responsible for ensuring that any financial data, personal details, and other information you enter into the App is accurate, complete, and up to date. The quality of the App's outputs depends entirely on the accuracy of your inputs.</li>
+                    <li><strong>Account Security</strong> — You must keep your login credentials confidential and secure. You are solely responsible for all activity that occurs under your account. You must notify us immediately at <a href="mailto:contact@myfirejourney.io">contact@myfirejourney.io</a> if you become aware of any unauthorised access to your account.</li>
+                    <li><strong>Personal Use Only</strong> — The App is licensed for your personal, non-commercial use only. You may not use the App to provide financial services, advice, or planning tools to third parties.</li>
+                    <li><strong>Lawful Use</strong> — You must not use the App for any purpose that is unlawful, fraudulent, or prohibited by these Terms or applicable law.</li>
+                    <li><strong>No Reverse Engineering</strong> — You must not attempt to reverse engineer, decompile, disassemble, modify, or create derivative works of the App, its source code, underlying algorithms, or any related technology.</li>
+                    <li><strong>No Automated Access</strong> — You must not use bots, scrapers, or any automated means to access, extract data from, or interact with the App without our prior written consent.</li>
+                    <li><strong>Respect for Others</strong> — If the App includes any community or shared features in the future, you agree to use them respectfully and not to post content that is abusive, defamatory, obscene, or otherwise objectionable.</li>
+                </ul>
+            </section>
 
-        <h2>11. Governing Law</h2>
-        <p>These Terms shall be governed by and construed in accordance with the laws of England and Wales, without regard to its conflict of law provisions.</p>
+            <!-- 5 -->
+            <section class="terms-section">
+                <div class="section-number">Section 05</div>
+                <h2>Accuracy of Information &amp; No Guarantees</h2>
+                <p>While we take reasonable care to ensure the accuracy of the calculations, models, and information provided within the App, we make no representations, warranties, or guarantees — express or implied — regarding:</p>
+                <ul class="data-list">
+                    <li>The accuracy, reliability, completeness, or timeliness of any calculation, projection, estimate, or output generated by the App.</li>
+                    <li>The suitability of any information or output for your individual financial circumstances, goals, or risk tolerance.</li>
+                    <li>The continued availability, performance, or error-free operation of the App or any of its features.</li>
+                    <li>The accuracy or availability of any third-party data, exchange rates, market data, or external information referenced or used by the App.</li>
+                </ul>
+                <p>All financial projections are estimates based on assumptions and simplified models. Actual results will vary. You are solely responsible for independently verifying any information, calculation, or projection before relying on it for any purpose.</p>
+            </section>
 
-        <h2>12. Contact Us</h2>
-        <p>If you have any questions about these Terms of Service, please contact us at:</p>
-        <p><a href="mailto:contact@myfirejourney.io">contact@myfirejourney.io</a></p>
-    </main>
+            <!-- 6 -->
+            <section class="terms-section">
+                <div class="section-number">Section 06</div>
+                <h2>Account Terms</h2>
+                <p class="sub-heading">Registration</p>
+                <p>To access certain features of the App, you must create an account by providing your email address, first name, and last name. You must provide accurate and complete registration information and keep it up to date.</p>
+
+                <p class="sub-heading">Authentication</p>
+                <p>The App uses email and password authentication only. We do not offer social login. Your password is securely hashed and stored by our authentication provider (Supabase). We never have access to your plaintext password.</p>
+
+                <p class="sub-heading">Account Security</p>
+                <p>You are responsible for maintaining the confidentiality of your account credentials. You agree to notify us immediately if you suspect any unauthorised use of your account. We are not liable for any loss or damage arising from your failure to protect your login information.</p>
+
+                <p class="sub-heading">One Account Per User</p>
+                <p>Each user may maintain only one account. We reserve the right to merge or remove duplicate accounts.</p>
+            </section>
+
+            <!-- 7 -->
+            <section class="terms-section">
+                <div class="section-number">Section 07</div>
+                <h2>Premium Subscription &amp; Payments</h2>
+                <p>MY FIRE JOURNEY may offer a premium subscription that unlocks additional features. If you choose to subscribe:</p>
+                <ul class="data-list">
+                    <li><strong>Payment Processing</strong> — All payments are processed securely by Stripe. We never receive, store, or have access to your full card number, CVV, or sensitive payment credentials.</li>
+                    <li><strong>Billing Information</strong> — During the payment process, you may be asked to provide a billing address. Address autocomplete is powered by the Google Places API.</li>
+                    <li><strong>Subscription Period</strong> — Your subscription will renew automatically at the end of each billing period unless you cancel before the renewal date.</li>
+                    <li><strong>Cancellation</strong> — You may cancel your premium subscription at any time from within the App. Upon cancellation, you will retain access to premium features until the end of your current billing period. No refunds will be issued for partial billing periods.</li>
+                    <li><strong>Price Changes</strong> — We reserve the right to change subscription pricing. We will provide reasonable advance notice of any price increase. Continued use of the premium subscription after a price change constitutes acceptance of the new price.</li>
+                    <li><strong>Refunds</strong> — Refund requests are handled on a case-by-case basis. Please contact us at <a href="mailto:contact@myfirejourney.io">contact@myfirejourney.io</a> if you believe a refund is warranted. Nothing in these Terms affects your statutory rights under the Consumer Rights Act 2015.</li>
+                </ul>
+            </section>
+
+            <!-- 8 -->
+            <section class="terms-section">
+                <div class="section-number">Section 08</div>
+                <h2>Intellectual Property</h2>
+                <p>All content, features, functionality, design, source code, graphics, logos, trademarks, and other intellectual property within MY FIRE JOURNEY are owned by us or our licensors and are protected by United Kingdom and international copyright, trademark, patent, and other intellectual property laws.</p>
+                <p>Your use of the App does not grant you any ownership, licence, or right to reproduce, distribute, modify, or create derivative works from any part of the App or its content, except as expressly permitted by these Terms or applicable law.</p>
+                <p>The MY FIRE JOURNEY name, logo, and all related names, logos, product and service names, designs, and slogans are our trademarks. You must not use them without our prior written permission.</p>
+            </section>
+
+            <!-- 9 -->
+            <section class="terms-section">
+                <div class="section-number">Section 09</div>
+                <h2>User-Generated Content &amp; Data</h2>
+                <p>Any financial data, scenarios, milestones, quiz responses, expense entries, and other content you create within the App ("User Content") remains your property. By using the App, you grant us a limited, non-exclusive licence to store, process, and display your User Content solely for the purpose of providing and improving the App's services to you.</p>
+                <p>We will not share, sell, or disclose your User Content to any third party except as described in our <a href="privacy.html">Privacy Policy</a> or as required by law.</p>
+            </section>
+
+            <!-- 10 -->
+            <section class="terms-section">
+                <div class="section-number">Section 10</div>
+                <h2>Limitation of Liability</h2>
+                <p>To the maximum extent permitted by applicable law, including the Consumer Rights Act 2015 and the Unfair Contract Terms Act 1977:</p>
+                <ul class="data-list">
+                    <li>The App is provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis, without warranties of any kind, whether express, implied, or statutory, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</li>
+                    <li>We shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, loss of data, loss of savings, financial losses, or loss of business opportunities, arising out of or in connection with your use of the App.</li>
+                    <li>We shall not be liable for any financial decisions you make, or any financial losses you incur, based on information, calculations, projections, or any other output provided by the App.</li>
+                    <li>Our total aggregate liability to you for all claims arising out of or relating to these Terms or your use of the App shall not exceed the total amount you have paid to us for the App in the twelve (12) months immediately preceding the event giving rise to the claim, or £50, whichever is greater.</li>
+                </ul>
+                <p>Nothing in these Terms excludes or limits our liability for death or personal injury caused by our negligence, fraud or fraudulent misrepresentation, or any other liability that cannot be excluded or limited under English law.</p>
+            </section>
+
+            <!-- 11 -->
+            <section class="terms-section">
+                <div class="section-number">Section 11</div>
+                <h2>Indemnification</h2>
+                <p>You agree to indemnify, defend, and hold harmless MY FIRE JOURNEY, its owners, operators, officers, employees, and agents from and against any claims, liabilities, damages, losses, costs, and expenses (including reasonable legal fees) arising out of or in connection with: your use of the App; your violation of these Terms; your violation of any applicable law or regulation; or any financial decisions you make based on the App's outputs.</p>
+            </section>
+
+            <!-- 12 -->
+            <section class="terms-section">
+                <div class="section-number">Section 12</div>
+                <h2>Third-Party Services</h2>
+                <p>The App integrates with the following third-party services to deliver its functionality:</p>
+                <ul class="data-list">
+                    <li><strong>Supabase</strong> — Authentication, database storage, and edge functions. Hosted at <a href="https://supabase.com" target="_blank" rel="noopener">supabase.com</a>.</li>
+                    <li><strong>Stripe</strong> — Secure payment processing for premium subscriptions. See <a href="https://stripe.com/gb/privacy" target="_blank" rel="noopener">Stripe's Privacy Policy</a>.</li>
+                    <li><strong>Google Places API</strong> — Address autocomplete during the payment process. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+                </ul>
+                <p>We are not responsible for the availability, accuracy, content, or practices of any third-party services. Your use of third-party services is subject to their respective terms of service and privacy policies. We encourage you to review them.</p>
+            </section>
+
+            <!-- 13 -->
+            <section class="terms-section">
+                <div class="section-number">Section 13</div>
+                <h2>Changes to These Terms</h2>
+                <p>We reserve the right to modify, amend, or replace these Terms at any time at our sole discretion. When we make material changes, we will notify you through the App or via email to your registered email address. The "Last updated" date at the top of this page will be revised accordingly.</p>
+                <p>Your continued use of the App following the posting of revised Terms constitutes your acceptance of and agreement to the changes. If you do not agree to the revised Terms, you must stop using the App and, if applicable, delete your account.</p>
+            </section>
+
+            <!-- 14 -->
+            <section class="terms-section">
+                <div class="section-number">Section 14</div>
+                <h2>Termination &amp; Suspension</h2>
+                <p>We reserve the right to suspend or terminate your access to the App immediately, without prior notice or liability, for any reason, including but not limited to:</p>
+                <ul class="data-list">
+                    <li>A breach of any provision of these Terms.</li>
+                    <li>Fraudulent, abusive, or unlawful activity.</li>
+                    <li>Conduct that we reasonably believe may cause harm to other users, third parties, or the integrity of the App.</li>
+                    <li>A request by law enforcement or other government authority.</li>
+                </ul>
+                <p>Upon termination, your right to use the App will cease immediately. Provisions of these Terms that by their nature should survive termination shall survive, including but not limited to: the Financial Disclaimer, Limitation of Liability, Indemnification, Intellectual Property, and Governing Law sections.</p>
+                <p>You may terminate your account at any time by deleting your account from within the App or by contacting us at <a href="mailto:contact@myfirejourney.io">contact@myfirejourney.io</a>. Upon account deletion, your personal data will be handled in accordance with our <a href="privacy.html">Privacy Policy</a>.</p>
+            </section>
+
+            <!-- 15 -->
+            <section class="terms-section">
+                <div class="section-number">Section 15</div>
+                <h2>Governing Law &amp; Dispute Resolution</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of England and Wales. Any disputes arising out of or in connection with these Terms or your use of the App shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+                <p>If you are a consumer, nothing in these Terms affects your statutory rights under English law, including but not limited to the Consumer Rights Act 2015. If you are resident in a jurisdiction within the United Kingdom other than England and Wales, you may also bring proceedings in the courts of that jurisdiction.</p>
+                <p>We encourage you to contact us first at <a href="mailto:contact@myfirejourney.io">contact@myfirejourney.io</a> to attempt to resolve any dispute informally before initiating formal legal proceedings.</p>
+            </section>
+
+            <!-- 16 -->
+            <section class="terms-section">
+                <div class="section-number">Section 16</div>
+                <h2>Severability</h2>
+                <p>If any provision of these Terms is held to be invalid, illegal, or unenforceable by a court of competent jurisdiction, that provision shall be modified to the minimum extent necessary to make it enforceable, or if modification is not possible, it shall be severed from these Terms. The remaining provisions shall continue in full force and effect.</p>
+            </section>
+
+            <!-- 17 -->
+            <section class="terms-section">
+                <div class="section-number">Section 17</div>
+                <h2>Entire Agreement</h2>
+                <p>These Terms, together with our <a href="privacy.html">Privacy Policy</a>, constitute the entire agreement between you and MY FIRE JOURNEY regarding your use of the App and supersede all prior and contemporaneous agreements, proposals, representations, and understandings, whether written or oral, relating to the subject matter herein.</p>
+            </section>
+
+            <!-- Contact -->
+            <div class="contact-card">
+                <h2>Questions or Concerns?</h2>
+                <p>If you have any questions about these Terms of Service, please get in touch.</p>
+                <a href="mailto:contact@myfirejourney.io">contact@myfirejourney.io</a>
+            </div>
+
+        </main>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
