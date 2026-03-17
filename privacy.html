@@ -344,7 +344,7 @@
         <div class="privacy-header-inner">
             <div class="privacy-header-label">MY FIRE JOURNEY</div>
             <h1>Privacy Policy</h1>
-            <div class="privacy-header-meta">Last updated: February 2026 &nbsp;&middot;&nbsp; Governed by the laws of England and Wales</div>
+            <div class="privacy-header-meta">Last updated: March 2026 &nbsp;&middot;&nbsp; Governed by the laws of England and Wales</div>
         </div>
     </header>
 
@@ -380,8 +380,7 @@
                     <li><strong>FIRE Quiz Data</strong> — Your answers to the FIRE readiness quiz and the results generated from them.</li>
                     <li><strong>Scenarios &amp; Milestones</strong> — Custom financial scenarios and milestones you create within the app.</li>
                     <li><strong>Daily Expense Tracking</strong> — Individual expense entries you log through the daily tracker feature.</li>
-                    <li><strong>Subscription &amp; Payment Status</strong> — Whether you hold a free or premium subscription and the current status of your payment.</li>
-                    <li><strong>Billing Information</strong> — Billing address provided during the payment process (collected via Stripe and Google Places API).</li>
+                    <li><strong>Subscription &amp; Payment Status</strong> — Whether you hold a free or premium subscription and the current status of your subscription.</li>
                 </ul>
             </section>
 
@@ -393,7 +392,7 @@
                 <ul class="data-list">
                     <li><strong>Providing the Service</strong> — To operate the app, perform FIRE calculations, display your dashboard, track expenses, and deliver the features you use.</li>
                     <li><strong>Authentication</strong> — To verify your identity when you sign in via email and password, and to facilitate password resets via email link. <em>(Lawful basis: contract performance)</em></li>
-                    <li><strong>Payment Processing</strong> — To process premium subscription payments through Stripe. We never store your card number or full payment details. <em>(Lawful basis: contract performance)</em></li>
+                    <li><strong>Payment Processing</strong> — To process premium subscription payments through Apple's App Store in-app purchase system. We never receive or store your payment details — Apple handles all payment processing. <em>(Lawful basis: contract performance)</em></li>
                     <li><strong>Service Improvement</strong> — To understand how the app is used and to improve its features and performance. <em>(Lawful basis: legitimate interest)</em></li>
                     <li><strong>Communication</strong> — To notify you of important changes to the service, this policy, or your account. <em>(Lawful basis: legitimate interest)</em></li>
                 </ul>
@@ -405,7 +404,7 @@
                 <div class="section-number">Section 03</div>
                 <h2>Data Storage &amp; Security</h2>
                 <p>All user data — including account information, financial data, quiz results, scenarios, milestones, and expense tracking entries — is stored in a Supabase-hosted PostgreSQL database. Supabase infrastructure is hosted on cloud servers which may be located outside the United Kingdom, currently the primary database is in EU, France.</p>
-                <p>Card and payment details are handled entirely by Stripe. MY FIRE JOURNEY never receives, processes, or stores your full card number, CVV, or sensitive payment credentials.</p>
+                <p>Payment details are handled entirely by Apple through its App Store in-app purchase system. MY FIRE JOURNEY never receives, processes, or stores any payment credentials.</p>
                 <p>We implement appropriate technical and organisational security measures including encrypted data transmission (TLS/SSL), secure authentication protocols, and access controls to protect your data against unauthorised access, loss, or misuse.</p>
             </section>
 
@@ -436,18 +435,13 @@
                             <td>Account data, financial data, quiz results, scenarios, milestones, expense entries</td>
                         </tr>
                         <tr>
-                            <td>Stripe</td>
-                            <td>Payment processing for premium subscriptions</td>
-                            <td>Card details, billing address, subscription status</td>
-                        </tr>
-                        <tr>
-                            <td>Google Places API</td>
-                            <td>Address autocomplete during payment</td>
-                            <td>Billing address input</td>
+                            <td>Apple</td>
+                            <td>In-app purchase processing and subscription management</td>
+                            <td>Subscription status, transaction IDs</td>
                         </tr>
                     </tbody>
                 </table>
-                <p>For more information, please refer to the privacy policies of <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a>, <a href="https://stripe.com/gb/privacy" target="_blank" rel="noopener">Stripe</a>, and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a>.</p>
+                <p>For more information, please refer to the privacy policies of <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a> and <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a>.</p>
             </section>
 
             <!-- 6 -->
